@@ -1,0 +1,7 @@
+{
+  "npmClient": "yarn",
+  "packages": [
+    "src/@ui/*"
+  ],
+  "version": "0.0.0"
+}

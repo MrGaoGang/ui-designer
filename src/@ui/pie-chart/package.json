@@ -1,0 +1,26 @@
+{
+  "name": "pie-chart",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "mr.gao <gaogangwork@qq.com>",
+  "homepage": "https://github.com/MrGaoGang/ui-designer#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrGaoGang/ui-designer.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/MrGaoGang/ui-designer/issues"
+  }
+}
