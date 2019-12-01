@@ -778,19 +778,64 @@ var store = __webpack_require__("d8d6");
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("c7fe");
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("8da0");
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("1160");
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("29c4");
-/* harmony import */ var _Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Users_mr_gao_Documents_Github_Vue_ui_designer_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3__);
+
+// EXTERNAL MODULE: /Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/core-js/modules/es.array.iterator.js
+var es_array_iterator = __webpack_require__("c7fe");
+
+// EXTERNAL MODULE: /Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/core-js/modules/es.promise.js
+var es_promise = __webpack_require__("8da0");
+
+// EXTERNAL MODULE: /Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/core-js/modules/es.object.assign.js
+var es_object_assign = __webpack_require__("1160");
+
+// EXTERNAL MODULE: /Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/core-js/modules/es.promise.finally.js
+var es_promise_finally = __webpack_require__("29c4");
+
+// CONCATENATED MODULE: /Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"5c84950c-vue-loader-template"}!/Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/vue-loader/lib??vue-loader-options!./pie-chart.vue?vue&type=template&id=30112644&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._v("我是饼状图")])}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./pie-chart.vue?vue&type=template&id=30112644&
+
+// CONCATENATED MODULE: /Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/thread-loader/dist/cjs.js!/Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/babel-loader/lib!/Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/vue-loader/lib??vue-loader-options!./pie-chart.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+/* harmony default export */ var lib_vue_loader_options_pie_chartvue_type_script_lang_js_ = ({});
+// CONCATENATED MODULE: ./pie-chart.vue?vue&type=script&lang=js&
+ /* harmony default export */ var pie_chartvue_type_script_lang_js_ = (lib_vue_loader_options_pie_chartvue_type_script_lang_js_); 
+// EXTERNAL MODULE: /Users/mr.gao/Documents/Github/Vue/ui-designer/node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("b41a");
+
+// CONCATENATED MODULE: ./pie-chart.vue
 
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  pie_chartvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var pie_chart = (component.exports);
+// CONCATENATED MODULE: ./index.js
+
+
+
+
+
+/* harmony default export */ var index = __webpack_exports__["default"] = (pie_chart);
 
 /***/ }),
 
@@ -2030,6 +2075,108 @@ var EXISTS = isObject(document) && isObject(document.createElement);
 module.exports = function (it) {
   return EXISTS ? document.createElement(it) : {};
 };
+
+
+/***/ }),
+
+/***/ "b41a":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
 
 
 /***/ }),

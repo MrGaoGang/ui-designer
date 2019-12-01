@@ -2774,10 +2774,6 @@ clone@^2.1.1, clone@^2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
 
-co@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
-
 coa@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/coa/-/coa-2.0.2.tgz#43f6c21151b4ef2bf57187db0d73de229e3e7ec3"
@@ -3109,23 +3105,6 @@ cosmiconfig@^5.0.0, cosmiconfig@^5.1.0:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
-cpx-fixed@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.npmjs.org/cpx-fixed/-/cpx-fixed-1.6.0.tgz#1b67b38d6319bd87b165700e80b681c41af151a8"
-  dependencies:
-    co "^4.6.0"
-    debounce "^1.1.0"
-    debug "^3.1.0"
-    duplexer "^0.1.1"
-    fs-extra "^6.0.1"
-    glob "^7.1.2"
-    glob2base "0.0.12"
-    minimatch "^3.0.4"
-    resolve "^1.8.1"
-    safe-buffer "^5.1.2"
-    shell-quote "^1.6.1"
-    subarg "^1.0.0"
-
 cpx@^1.5.0:
   version "1.5.0"
   resolved "https://registry.npmjs.org/cpx/-/cpx-1.5.0.tgz#185be018511d87270dedccc293171e37655ab88f"
@@ -3403,10 +3382,6 @@ dateformat@^3.0.0:
 de-indent@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
-
-debounce@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/debounce/-/debounce-1.2.0.tgz#44a540abc0ea9943018dc0eaa95cce87f65cd131"
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
@@ -4212,17 +4187,6 @@ file-loader@^4.2.0:
     loader-utils "^1.2.3"
     schema-utils "^2.5.0"
 
-filemanager-webpack-plugin-fixed@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.npmjs.org/filemanager-webpack-plugin-fixed/-/filemanager-webpack-plugin-fixed-2.0.9.tgz#0c051178b4d7fcd34056e4eab49facc29c057c69"
-  dependencies:
-    archiver "^3.0.0"
-    cpx-fixed "^1.6.0"
-    fs-extra "^7.0.0"
-    make-dir "^1.1.0"
-    mv "^2.1.1"
-    rimraf "^2.6.2"
-
 filemanager-webpack-plugin@^2.0.5:
   version "2.0.5"
   resolved "https://registry.npmjs.org/filemanager-webpack-plugin/-/filemanager-webpack-plugin-2.0.5.tgz#6cec3a2a02d429abca64ed6c0c1c46ae54b1846b"
@@ -4409,14 +4373,6 @@ fs-constants@^1.0.0:
 fs-extra@^4.0.3:
   version "4.0.3"
   resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^4.0.0"
-    universalify "^0.1.0"
-
-fs-extra@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-6.0.1.tgz#8abc128f7946e310135ddc93b98bddb410e7a34b"
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
@@ -4624,7 +4580,7 @@ glob-to-regexp@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz#8c5a1494d2066c570cc3bfe4496175acc4d502ab"
 
-glob2base@0.0.12, glob2base@^0.0.12:
+glob2base@^0.0.12:
   version "0.0.12"
   resolved "https://registry.npmjs.org/glob2base/-/glob2base-0.0.12.tgz#9d419b3e28f12e83a362164a277055922c9c0d56"
   dependencies:

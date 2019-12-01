@@ -42,9 +42,12 @@ module.exports = (dirName = ".", workSpace = "dist") => ({
     if (process.env.NODE_ENV === "production") {
       let packageName = require("./package.json").name;
       const { version, name } = require(path.resolve("package.json"));
-      const metData = require(path.resolve(dirName, `${name}.json`));
       webpckConfig.entryPoints.clear();
-      webpckConfig.entry("./index.js").add(metData.main);
+      // 要打包index.js和props.js文件
+      ["index", "props"].forEach(each => {
+        webpckConfig.entry(`./${each}.js`).add(`./${each}.js`);
+      });
+      // webpckConfig.entry("./index.js").add("./index.js");
       //   文件名称不需要chunk
       webpckConfig.output
         .filename("[name].js")
@@ -66,9 +69,6 @@ module.exports = (dirName = ".", workSpace = "dist") => ({
       const copyData = [
         {
           from: "*.+(md)"
-        },
-        {
-          from: `${name}.json`
         }
       ];
       if (webpckConfig.plugins.has("copy")) {
