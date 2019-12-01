@@ -41,9 +41,6 @@ module.exports = (workSpace = "dist") => {
   let packageName = require("./package.json").name;
   const { version, name } = require(path.resolve("package.json"));
   let publicPath = `widgets/${packageName}-${name}-${version}`;
-  console.log('====================================');
-  console.log(publicPath);
-  console.log('====================================');
   return {
     publicPath: publicPath,
     devServer: {
@@ -67,7 +64,6 @@ module.exports = (workSpace = "dist") => {
         ["index", "props"].forEach(each => {
           webpckConfig.entry(`${each}`).add(`./${each}.js`);
         });
-        // webpckConfig.entry("./index.js").add("./index.js");
         //   文件名称不需要chunk
         webpckConfig.output
           .filename("[name].js")
@@ -83,7 +79,7 @@ module.exports = (workSpace = "dist") => {
 
         removeHTMLPlugin(webpckConfig);
         //   不需要分割代码
-        webpckConfig.optimization.minimize(false).splitChunks(false);
+        webpckConfig.optimization.minimize(true).splitChunks(false);
 
         //   拷贝说明文档和组件描述文档
         const copyData = [
