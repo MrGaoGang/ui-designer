@@ -1,6 +1,6 @@
 <template>
   <div>我是饼状图
-    <img src="./src/assets/go_back.png">
+    <img src="./src/assets/logo.png">
   </div>
 </template>
 

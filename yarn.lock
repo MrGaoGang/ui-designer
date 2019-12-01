@@ -9129,6 +9129,10 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
 
+vue-cli-plugin-uibuilder-widget@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.npmjs.org/vue-cli-plugin-uibuilder-widget/-/vue-cli-plugin-uibuilder-widget-1.1.4.tgz#f8af9bf1ce5e26bf83faae92cd6769f3e30aee92"
+
 vue-eslint-parser@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/vue-eslint-parser/-/vue-eslint-parser-5.0.0.tgz#00f4e4da94ec974b821a26ff0ed0f7a78402b8a1"
