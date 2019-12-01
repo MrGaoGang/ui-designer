@@ -23,7 +23,7 @@ function removeHTMLPlugin(webpackConfig) {
 function zipFile(webpackConfig, workSpace, packageName, widgetName, version) {
   const zipDir = path.resolve(workSpace, ".zip");
   fs.ensureDirSync(zipDir);
-  const zipName = `${zipDir}/${packageName}-${widgetName}-${version}.zip`;
+  const zipName = `${zipDir}/${packageName}@${widgetName}-${version}.zip`;
   webpackConfig.plugin("zip").use(fileManager, [
     {
       onEnd: {
