@@ -58,7 +58,6 @@ module.exports = (workSpace = "dist") => {
     },
     chainWebpack: webpckConfig => {
       if (process.env.NODE_ENV === "production") {
-
         webpckConfig.entryPoints.clear();
         // 要打包index.js和props.js文件
         ["index", "props"].forEach(each => {
@@ -72,7 +71,9 @@ module.exports = (workSpace = "dist") => {
           .library();
         webpckConfig.externals([
           {
-            vue: "vue"
+            vue: "vue",
+            "view-design": "view-design",
+            oview: "oview"
           },
           ...(webpckConfig.get("externals") || [])
         ]);

@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-const pieChart = require('pie-chart');
+const pieChart = require('chart-line');
 
 // TODO: DEMONSTRATE API
 ```

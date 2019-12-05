@@ -1,5 +1,5 @@
 <template>
-  <div>我是属性面板</div>
+  <div>折线图属性面板</div>
 </template>
 
 <script>
