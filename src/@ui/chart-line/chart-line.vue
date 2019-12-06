@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{chartName||''}}
     <o-chart :data="normalData" :col-defs="normaColConfig" :tooltip="normalTootip">
       <o-line :axis="normaAxis" :position="'date*value'"></o-line>
     </o-chart>
@@ -13,6 +14,9 @@ export default {
   components: {
     "o-chart": Chart,
     "o-line": Line
+  },
+  props: {
+    chartName: String
   },
   data() {
     return {
