@@ -43,6 +43,9 @@ module.exports = (workSpace = "dist") => {
   let publicPath = `widgets/${packageName}-${name}-${version}`;
   return {
     publicPath: publicPath,
+    css: {
+      extract: false
+    },
     devServer: {
       // 设置主机地址
       host: "localhost",
@@ -73,14 +76,15 @@ module.exports = (workSpace = "dist") => {
           {
             vue: "vue",
             "view-design": "view-design",
-            oview: "oview"
+            oview: "oview",
+            echarts: "echarts"
           },
           ...(webpckConfig.get("externals") || [])
         ]);
 
         removeHTMLPlugin(webpckConfig);
         //   不需要分割代码
-        webpckConfig.optimization.minimize(true).splitChunks(false);
+        webpckConfig.optimization.minimize(false).splitChunks(false);
 
         //   拷贝说明文档和组件描述文档
         const copyData = [
