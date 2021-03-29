@@ -1,6 +1,6 @@
 # ui-designer
 
-预览地址:http://gaogangsever.cn/
+预览地址:https://gaogangsever.cn/ui-builder-root/index.html#
 
 此工程为页面构建器的基础组件。核心编辑器，有兴趣请联系:gaogangwork@qq.com
 
