@@ -6,6 +6,8 @@
 
 <script>
 let echarts = require("echarts");
+import elementResize from "element-resize-detector"; // 尺寸监听组件
+
 export default {
   props: {
     chartName: String
@@ -112,13 +114,16 @@ export default {
     let myChart = echarts.init(this.$refs.chartRef);
     this.chart = myChart;
     this.chart.setOption(this.option);
-    window.addEventListener("resize", () => {
-      this.chart && this.chart.resize();
+    const elementResizer = elementResize({
+      strategy: "scroll", // <- 推荐监听滚动，提升性能
+      callOnAdd: true // 添加侦听器时是否应调用,默认true
+    });
+    elementResizer.listenTo(this.$refs.chartRef, () => {
+      this.chart.resize(); // 当元素尺寸发生改变是会触发此事件，刷新图表
     });
   },
   beforeDestroy() {
     this.chart = null;
-    window.removeEventListener("resize", () => {});
   }
 };
 </script>
